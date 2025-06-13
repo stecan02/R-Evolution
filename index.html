@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>R-Evolution</title>
+  <style>
+    html {
+    scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background: linear-gradient(135deg, #133b37, #1a5854);
+      color: #d7c9b4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+    }
+    header {
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 0.1em;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    main p {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+
+    .spostato {
+      position:relative;
+      top:0rem;
+      font-size:1.4rem;
+      font-weight:bold;
+    }
+
+    .descrizione {
+      position:relative;
+      font-size:1.1rem;
+      top:-1rem;
+      color:#d7c9b4;
+      border:solid 1px #d7c9b4;
+      box-shadow:0 0 0 3px transparent, 0 6px 20px #d7c9b4;
+      border-radius:20px;
+      width: 90%;   
+      max-width: 50rem;
+      margin: 0 auto; 
+      padding:2rem;
+      background-color: #133b37;
+
+      
+    }
+
+    .btn-contact {
+      background-color: #4d830f;
+      position:relative;
+      top:4rem;
+      border: none;
+      color: #d7c9b4;
+      padding: 1rem 2rem;
+      font-size: 1.3rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      width:13rem;
+      margin: 0 auto;
+    }
+    .btn-contact:hover {
+      background-color: #3a630b;
+    }
+    footer {
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: rgba(0,0,0,0.2);
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      main p {
+        font-size: 1rem;
+      }
+
+      .spostato {
+      position:relative;
+      top:-2rem;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>R-Evolution</h1>
+  </header>
+      <main>
+        <div class="intro">
+          <p class="spostato">dove l'innovazione incontra la sostenibilità</p>
+        </div>
+
+        <div class="descrizione">
+          <p>
+            Siamo un team giovane e determinato, uniti da un'idea semplice ma potente:<br>
+            rendere il mondo più sostenibile attraverso la tecnologia.<br>
+            Crediamo che ogni piccolo gesto possa generare un grande impatto,<br>
+            soprattutto se supportato da soluzioni intelligenti e inclusive.<br>
+            Per questo, sviluppiamo progetti che uniscono etica, design e automazione,<br>
+            con l'obiettivo di semplificare la vita quotidiana e accelerare la transizione ecologica.<br><br>
+            Non si tratta solo di creare un prodotto.<br>
+            Si tratta di ispirare un cambiamento.<br>
+            Una <strong>R-Evolution</strong>, appunto.
+          </p>
+        </div>
+
+        <div class="contatto">
+          <a href="#contatti" class="btn-contact">Contattaci</a>
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+           <section id="contatti">
+              <p>Email: info@REvolution.com</p>
+              <p>Telefono: +39 3887835574</p>
+           </section>
+        </div>
+      </main>
+  <footer>
+    &copy; 2025 R-Evolution Team. Tutti i diritti riservati.
+  </footer>
+</body>
+</html>
+
