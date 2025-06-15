@@ -137,8 +137,8 @@
     width: 50%;
     padding: 1rem;
     font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom:2rem;
+    margin-top: 2rem;
+    margin-bottom:8rem;
   }
 
   .elementi_affiancati {
@@ -188,9 +188,11 @@
   }
 
   .button_custom {
-    width: 60%;
+    width: 40%;
     font-size: 1.2rem;
     padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom:8rem;
   }
 
   .elementi_affiancati {
