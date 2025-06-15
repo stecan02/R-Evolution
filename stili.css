@@ -4,7 +4,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
- }
+}
 
 
  body {
@@ -138,7 +138,7 @@
     padding: 1rem;
     font-size: 1.2rem;
     margin-top: 1rem;
-    margin-bottom:8rem;
+    margin-bottom:2rem;
   }
 
   .elementi_affiancati {
@@ -169,11 +169,11 @@
   }
 
   header h1 {
-    font-size: 3.6rem;
+    font-size: 2.2rem;
   }
 
   .label_sottotitolo {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     margin-top: 2.5rem;
   }
 
@@ -184,15 +184,13 @@
   }
 
   .label_custom {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .button_custom {
-    width: 40%;
-    font-size: 1.6rem;
+    width: 60%;
+    font-size: 1.2rem;
     padding: 1rem;
-    margin-top: 1rem;
-    margin-bottom:8rem;
   }
 
   .elementi_affiancati {
@@ -209,7 +207,7 @@
   }
 
   #contatti {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding: 0 1rem;
   }
 }
