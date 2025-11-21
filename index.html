@@ -4,60 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zeno - Il futuro del riciclo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="stili_nuovo.css"/>
 </head>
 <body>
-  <header>
-    <h1>Zeno</h1>
-    <p>La <span class="highlight">rivoluzione intelligente</span> e <span class="highlight">sostenibile</span> nella raccolta dei rifiuti</p>
-  </header>
+  <canvas id="particles"></canvas>
+  <div class="container-fluid d-flex flex-column justify-content-center align-items-center position-relative pt-5 pb-5" style="z-index:1; min-height: 100vh;">
+    <h1 class="display-1 fw-bold modern-title mb-3" style="padding-top: 14rem;">
+      <span class="modern-title-text" style="font-size: 10rem;">Zeno</span>
+      <span class="modern-underline"></span>
+    </h1>
+    <p class="display-5 text-white text-center mb-5" style="margin-bottom: 8rem !important; font-size: 2.8rem;">
+      La <span class="highlight">rivoluzione intelligente</span> e <span class="highlight">sostenibile</span> nella gestione dei rifiuti
+    </p>
 
-  <section class="section">
-    <h2>Il Progetto</h2>
-    <p><span class="highlight">Zeno</span> è un sistema automatico per la raccolta differenziata progettato per agevolare le attività commerciali nel settore della ristorazione, in particolare nei fast food, dove la gestione dei rifiuti rappresenta una sfida quotidiana.</p>
-  </section>
-
-<section class="section" id="vid">
-  <h2 style="text-align: center;">Guarda il Video</h2>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/TshGsE6gFAg" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-    </iframe>
+    <a href="#info-section" class="btn btn-lg btn-primary modern-button">Scopri di più</a>
   </div>
-</section>
 
-  <section class="section">
-    <h2>Perchè ora?</h2>
-    <div class="features">
-      <div class="feature-box">
-        <h3>🧭 Tempo </h3>
-        <p>In un mondo che corre, contribuisci alla sostenibilità senza perdere tempo.</p>
-      </div>
-      <div class="feature-box">
-        <h3>💰 Denaro </h3>
-        <p>Riduci i costi derivanti dalla gestione della raccolta differenziata, risparmiando denaro.</p>
-      </div>
-      <div class="feature-box">
-        <h3>🎯 Punto di svolta</h3>
-        <p>Aiuti la società a compiere un cambiamento significativo, facendo questo importante passo.</p>
+
+  <div id ="info-section" class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <h2 class="display-5 text-white text-center mb-5" style="font-size: 2.8rem;">Di cosa si tratta?</h2>
+        <div class="accent-box">
+          <p class="text-center mb-0" style="font-size: 1.25rem; line-height: 1.6; font-weight:500;"><span class="highlight2">Zeno</span> è un <span class="highlight2">cestino intelligente</span>, progettato per semplificare la vita quotidiana, e più precisamente per agevolare
+            coloro che hanno attività commerciali e spesso riscontrano criticità nella gestione dei rifiuti.<br><br>
+            Grazie alla suo sistema embedded, <span class="highlight2">Zeno riconosce e smista automaticamente i rifiuti</span>, garantendo una raccolta differenziata efficiente e senza errori.<br><br>
+            Il funzionamento è semplice ed intuitivo : gli <span class="highlight2">utenti</span> si avvicinano al <span class="highlight2">cestino</span>, dove nella parte superiore trovano un unico <span class="highlight2">vano</span> di inserimento, in cui possono <span class="highlight2">depositare i rifiuti di vario tipo</span>,
+            dopodichè il gioco è fatto, <span class="highlight2">al resto pensa Zeno!</span>.
+            In questo modo inoltre la collettività può fare un passo avanti verso un futuro più sostenibile, riducendo l'impatto ambientale e promuovendo pratiche di riciclo corrette.          
+          </p>
+        </div>
       </div>
     </div>
-  </section>
-
-  <section class="section">
-    <h2>Impatto Ambientale</h2>
-    <p>Zeno riduce gli errori nella raccolta differenziata, migliora l’efficienza dei processi di smaltimento e favorisce la sostenibilità ambientale. Il sistema promuove il corretto smistamento con ricavi ricorrenti derivati da sacchetti intelligenti compatibili.</p>
-  </section>
-
-  <section class="section">
-    <h2>Chi Siamo</h2>
-    <p>Siamo un team giovane con l’obiettivo di unire tecnologia e sostenibilità. Zeno nasce da un’idea concreta: rendere il riciclo più facile, intelligente e automatico per tutti.</p>
-  </section>
+  </div>
+  
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4 mb-4 d-flex">
+        <div class="feature-box w-100 text-center">
+          <h3 class="mb-2">Tempo</h3>
+          <p>In un mondo che corre, contribuisci alla sostenibilità senza perdere tempo.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4 d-flex">
+        <div class="feature-box w-100 text-center">
+          <h3 class="mb-2">Denaro</h3>
+          <p>Riduci i costi derivanti dalla gestione della raccolta differenziata, risparmiando denaro.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4 d-flex">
+        <div class="feature-box w-100 text-center">
+          <h3 class="mb-2">Punto di svolta</h3>
+          <p>Aiuti la società a compiere un cambiamento significativo, facendo questo importante passo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container my-5">
+  <div class="row align-items-center justify-content-center mb-4">
+    <div class="col-12 col-md-4 text-center">
+      <img src="images/zeno4.png" alt="Impatto ambientale" class="img-fluid feature-image">
+    </div>
+    <div class="col-12 col-md-8">
+      <div class="feature-box text-start">
+        <h2 class="mb-3">Impatto Ambientale</h2>
+        <p>Zeno riduce gli errori nella raccolta differenziata, migliora l’efficienza dei processi di smaltimento e favorisce la sostenibilità ambientale. Il sistema promuove il corretto smistamento con ricavi ricorrenti derivati da sacchetti intelligenti compatibili.</p>
+      </div>
+      <div><br></div>
+      <div class="feature-box text-start">
+        <h2 class="mb-3">Chi siamo?</h2>
+        <p>Siamo un team giovane con l’obiettivo di unire tecnologia e sostenibilità. Zeno nasce da un’idea concreta: rendere il riciclo più facile, intelligente e automatico per tutti.</p>
+      </div>
+    </div>
+  </div>
 
   <footer>
-    © 2025 R-Evolution - Per info: <a href="mailto:stefanocanovi2002@gmail.com">stefanocanovi2002@gmail.com</a>
+    © 2025 R-Evolution - Per info: <a href="mailto:info@revolutiontm.it">info@revolutiontm.it</a>
   </footer>
+  <script src="particles.js"></script>
 </body>
 </html>
