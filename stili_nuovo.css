@@ -29,15 +29,8 @@
 }
 
 @keyframes underline-grow {
-  from { 
-    width: 0; 
-    opacity: 0; 
-  }
-  to { 
-    width: 260px; 
-    max-width: 90%;
-    opacity: 1; 
-  }
+  from { width: 0; opacity: 0; }
+  to { width: 260px; max-width: 90%; opacity: 1; }
 }
 
 body {
@@ -118,6 +111,8 @@ body {
 
 .accent-box p {
   margin: 0;
+  position: relative;
+  z-index: 1;
   font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
 
@@ -173,7 +168,7 @@ footer {
   box-shadow: 0 12px 30px rgba(16,128,48,0.16), 0 2px 8px rgba(0,0,0,0.18);
   transition: transform .18s ease, box-shadow .18s ease, opacity .12s ease;
   margin-top: -3.2rem;
-  text-align: center;
+  cursor: pointer;
 }
 
 .modern-button:hover {
@@ -185,7 +180,7 @@ footer {
   transform: translateY(-1px) scale(.995);
 }
 
-/* Tablet (768px - 1024px) */
+/* ========== RESPONSIVE TABLET ========== */
 @media (max-width: 1024px) {
   .modern-title-text {
     letter-spacing: 1.5px;
@@ -206,8 +201,12 @@ footer {
   }
 }
 
-/* Mobile landscape e tablet piccoli (481px - 768px) */
+/* ========== RESPONSIVE MOBILE LANDSCAPE ========== */
 @media (max-width: 768px) {
+  .modern-title {
+    padding: 0 1rem;
+  }
+
   .modern-title-text {
     letter-spacing: 1px;
   }
@@ -218,14 +217,8 @@ footer {
   }
   
   @keyframes underline-grow {
-    from { 
-      width: 0; 
-      opacity: 0; 
-    }
-    to { 
-      width: 200px;
-      opacity: 1; 
-    }
+    from { width: 0; opacity: 0; }
+    to { width: 200px; max-width: 90%; opacity: 1; }
   }
   
   .accent-box {
@@ -266,7 +259,17 @@ footer {
   }
 }
 
-/* Mobile portrait (320px - 480px) */
+/* ========== RESPONSIVE MOBILE ========== */
+@media (max-width: 600px) {
+  .video-container {
+    width: 100%;
+    max-width: none;
+    aspect-ratio: auto;
+    height: 50vh;
+  }
+}
+
+/* ========== RESPONSIVE MOBILE PORTRAIT ========== */
 @media (max-width: 480px) {
   .modern-title-text {
     letter-spacing: 0.5px;
@@ -278,14 +281,8 @@ footer {
   }
   
   @keyframes underline-grow {
-    from { 
-      width: 0; 
-      opacity: 0; 
-    }
-    to { 
-      width: 150px;
-      opacity: 1; 
-    }
+    from { width: 0; opacity: 0; }
+    to { width: 150px; max-width: 90%; opacity: 1; }
   }
   
   .accent-box {
@@ -312,7 +309,6 @@ footer {
   }
   
   .modern-button {
-    margin-top: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     width: 90%;
@@ -320,20 +316,16 @@ footer {
   }
   
   .video-container {
-    width: 100%;
-    height: 50vh;
-    aspect-ratio: auto;
     margin: 1rem auto;
   }
   
   footer {
     font-size: 0.8rem;
-    padding: 1rem 0.5rem;
     margin-bottom: -1rem;
   }
 }
 
-/* Mobile molto piccoli (sotto 360px) */
+/* ========== RESPONSIVE MOBILE PICCOLO ========== */
 @media (max-width: 360px) {
   .modern-underline {
     height: 3px;
@@ -341,14 +333,8 @@ footer {
   }
   
   @keyframes underline-grow {
-    from { 
-      width: 0; 
-      opacity: 0; 
-    }
-    to { 
-      width: 120px;
-      opacity: 1; 
-    }
+    from { width: 0; opacity: 0; }
+    to { width: 120px; max-width: 90%; opacity: 1; }
   }
   
   .accent-box {
